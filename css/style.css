@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 10vw;
+        margin: auto;
+        position: fixed;
+        z-index: 99;
+    }
+        .header .logo a {
+            font-size: 28px;
+            color: #b81414;
+            text-decoration: none;
+        }
+        .header ul {
+            display: flex;
+            list-style: none;
+        }
+        .header .menu ul li a {
+            color: #fff;
+            margin: 0 15px;
+            padding: 3px;
+            text-decoration: none;
+            transition: .5s;
+        }
+        .header .menu ul li a:hover {
+            color: #b81414;
+        }
+        .header .nav-icon {
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+    .home {
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/fondo.jpg);
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+        .home .banner-container{
+            background-color: #1e2326;
+            max-width: 350px;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            border-radius: 40px;
+        }
+        .home .banner-container img{
+            margin-top: 40px;
+            border: 5px solid #b81414;
+            display: block;
+            width: 80%;
+            margin: auto;
+            border-radius: 100%;
+        }
+        .home .banner-container h1{
+            margin-bottom: 3px;
+        }
+        .home .banner-container h2{
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .home .banner-container .nick{
+            font-size: 15px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            color: #8C96A5;
+        }
+        .home .banner-container .rrss a{
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            margin: 20px 5px 0 5px;
+            font-size: 20px;
+            transition: .3s;
+        }
+        .home .banner-container .rrss a:hover{
+            background-color: #1CB698;
+        }
+        
+    .portfolio{
+        background-color: #252A2E;
+        height: 100vh;
+        color: #fff;
+        padding: 50px 20px;
+    }
+        .portfolio .portfolio-container{
+            max-width: 1100px;
+            margin: auto;
+        }
+        .portfolio h2{
+            font-size: 48px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .portfolio .galeria{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+            .portfolio .galeria .proyecto{
+                position: relative;
+                flex: 1 1 100%;
+                max-width: 22vw;
+                height: fit-content;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .portfolio .galeria .proyecto img{
+                width: 100%;
+                display: block;
+            }
+            .portfolio .galeria .proyecto .overlay{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: 1s;
+                font-size: 18px;
+                letter-spacing: 3px;
+                opacity: 0;
+            }
+                .portfolio .galeria .proyecto .overlay h3{
+                    margin-bottom: 20px;
+                    transition: 1s;
+                }
+                .portfolio .galeria .proyecto .overlay:hover{
+                    opacity: 1;
+                }
+                .portfolio .galeria .proyecto .overlay:hover h3{
+                    margin-bottom: 0px;
+                }
+    
+    .contact{
+        background-image: url(img/contact_bg.png);
+        background-color: #1e2326;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        padding: 50px 0;
+    }
+        .contact .contact-container{
+            flex: 1 1 100%;
+            max-width: 1100px;
+            margin: 0 20VW;
+        }
+        .contact h2{
+            font-size: 48px;
+            text-align: center;
+            padding: 20px 0;
+        }
+            .contact input, .contact textarea{
+                display: block;
+                width: 100%;
+                padding: 18px;
+                border: none;
+                margin-bottom: 20px;
+                background-color: #252A2E;
+                color: #fff;
+                font-size: 18px;
+            }
+        .contact button{
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid #fff;
+            width: fit-content;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 22px;
+            font-size: 16px;
+            color: #fff;
+            position: relative;
+            z-index: 10;
+        }
+            .contact button .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: #1CB698;
+                z-index: -1;
+                transition: 1s;
+            }
+            .contact button:hover .overlay{
+                width: 100%;
+            }
+
+@media all and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .header .nav-icon{
+        display: block;
+        position: absolute;
+        color: #fff;
+        left: 80%;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+
+    .contact .fila{
+        display: block;
+    }
+    .contact .fila .col{
+        width: 100%;
+    }
+}
