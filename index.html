@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="@SindromeDeLuis">
-        <link rel="icon" href="img/icon.png">
-        <title>Luis A Sandoval @SindromeDeLuis</title>
+        <link rel="icon" href="favicon.ico">
+        <title>Luis A Sandoval @SindromeDeLuis | Web Developer</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="vendor/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -20,6 +20,7 @@
                 <nav class="menu">
                     <ul>
                         <li><a href="#home">HOME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
                         <li><a href="#portfolio">PORTFOLIO</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
@@ -45,6 +46,21 @@
                     </div>
                 </section>
 
+                <section class="skills" id="skills">
+                    <h2>SKILLS</h2>
+                    <div class="skills-container">
+                        <div class="gallery2" id="gallery2">
+                            <!-- skill-template -->
+                        </div>
+                    </div>
+                </section>
+
+                <template id="skill-template">
+                    <div class="skill">
+                        <img src="" id="image2" alt="">
+                    </div>
+                </template>
+
                 <section class="portfolio" id="portfolio">
                     <h2>PORTFOLIO</h2>
                     <div class="portfolio-container">
@@ -56,7 +72,7 @@
 
                 <template id="project-template">
                     <div class="project">
-                        <img src="" id="image" alt="">
+                        <img src="" id="image" alt="project preview">
                         <a href="" target="_blank" rel="noopener noreferrer" id="url">
                             <div class="overlay">
                                 <h3 id="name-project">Project</h3>
@@ -85,5 +101,6 @@
         </div>
     </body>
     <script src="js/menu.js"></script>
+    <script src="js/skills.js"></script>
     <script src="js/proyects.js"></script>
 </html>

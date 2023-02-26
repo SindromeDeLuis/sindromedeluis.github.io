@@ -110,7 +110,45 @@ html, body {
         .home .home-container .rrss a:hover {
             background-color: #b81414;
         }
-        
+    
+    .skills {
+        display: flex;
+        flex-direction: column;
+        background-color: #1f1f1f;
+        height: 100vh;
+        color: #fff;
+        padding: 45px 20px;
+    }
+        .skills h2 {
+            font-size: 48px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .skills .skills-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+            .skills .skills-container .gallery2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                .skills .skills-container .gallery2 .skill {
+                    position: relative;
+                    flex: 1 1 100%;
+                    max-width: 20vw;
+                }
+                    .skills .skills-container .gallery2 .skill img {
+                        width: 100%;
+                        display: block;
+                        border-radius: 20px;
+                    }
+                    .skills .skills-container .gallery2 .skill:hover img {
+                        transform: scale(1.25);
+                        transition: .5s;
+                    }
+
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -269,6 +307,21 @@ html, body {
     html, body {
         overflow-y: scroll;
     }
+
+    .skills {
+        height: 100%;
+        padding: 20px;
+    }
+        .skills .skills-container .gallery2{
+            width: 100%;
+        }
+        .skills .skills-container .gallery2 .skill{
+            max-width: 35vw;
+            margin-bottom: 20px;
+        }
+        .skills .skills-container .gallery2 .skill img{
+            width: 100%;
+        }
 
     .portfolio {
         height: 100%;

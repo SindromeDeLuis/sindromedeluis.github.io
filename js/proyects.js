@@ -44,10 +44,11 @@ const projectFragment = document.createDocumentFragment()
 projects.forEach(project => {
     const clone = projectTemplate.content.firstElementChild.cloneNode(true)
 
-    clone.querySelector("#name-project").textContent = project.name;
-    clone.querySelector("#subtitle").textContent = project.subtitle;
-    clone.querySelector("#image").src = "img/"+project.preview;
-    clone.querySelector("#url").setAttribute("href", project.url);
+    clone.querySelector("#name-project").textContent = project.name
+    clone.querySelector("#subtitle").textContent = project.subtitle
+    clone.querySelector("#image").src = "img/projects/"+project.preview
+    clone.querySelector("#image").loading = "lazy"
+    clone.querySelector("#url").setAttribute("href", project.url)
     
     projectFragment.appendChild(clone)
 })
