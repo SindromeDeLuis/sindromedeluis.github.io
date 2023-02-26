@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="@SindromeDeLuis">
-    <link rel="icon" href="img/icon_x.png">
-    <title>Luis A Sandoval @SindromeDeLuis</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <a href="#"></a>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="nav-icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-
-        <main>
-            <section class="home" id="home">
-                <div class="banner-container">
-                    <div class="img-container">
-                        <img src="img/foto_lasg.jpg" alt="">
-                    </div>
-                    <h1>Luis A. Sandoval</h1>
-                    <h2 class="nick">@SindromeDeLuis</h2>
-                    <h2>Software Developer</h2>
-                    <div class="rrss">
-                        <a href="https://github.com/SindromeDeLuis" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/sindromedeluis" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="@SindromeDeLuis">
+        <link rel="icon" href="img/icon.png">
+        <title>Luis A Sandoval @SindromeDeLuis</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="vendor/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <a href="#"></a>
                 </div>
-            </section>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
 
-            <section class="portfolio" id="portfolio">
-                <div class="portfolio-container">
+            <main>
+                <section class="home" id="home">
+                    <div class="home-container">
+                        <div class="img-container">
+                            <img src="img/profile.jpg" alt="">
+                        </div>
+                        <h1>Luis A. Sandoval</h1>
+                        <h2 class="nick">@SindromeDeLuis</h2>
+                        <h2>Web Developer</h2>
+                        <div class="rrss">
+                            <a href="https://github.com/SindromeDeLuis" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sindromedeluis" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio" id="portfolio">
                     <h2>PORTFOLIO</h2>
-                    <div class="galeria" id="galeria">
-                        
+                    <div class="portfolio-container">
+                        <div class="gallery" id="gallery">
+                            <!-- project-template -->
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <template id="project-template">
-                <div class="proyecto">
-                    <img src="img/p1.png" id="image" alt="">
-                    <a href="" target="_blank" rel="noopener noreferrer" id="url"><div class="overlay">
-                        <h3 id="name-project">Project</h3>
-                        <p id="subtitle">Subtitle</p>
-                    </div></a>
-                </div>
-            </template>
+                <template id="project-template">
+                    <div class="project">
+                        <img src="" id="image" alt="">
+                        <a href="" target="_blank" rel="noopener noreferrer" id="url">
+                            <div class="overlay">
+                                <h3 id="name-project">Project</h3>
+                                <p id="subtitle">Subtitle</p>
+                            </div>
+                        </a>
+                    </div>
+                </template>
 
-            <section class="contact" id="contact">
-                <div class="contact-container">
+                <section class="contact" id="contact">
                     <h2>CONTACT</h2>
-                    <form action="mailto:lasg.code@gmail.com" method="post" enctype="text/plain"></form>
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email Address">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
-                        <button type="submit">
-                            Send <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main>
-    </div>
-    <script src="js/app.js"></script>
-</body>
+                    <div class="contact-container">
+                        <form action="mailto:lasg.code@gmail.com" method="post" enctype="text/plain"></form>
+                            <input type="text" name="name" placeholder="Name" name="name">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                            <button type="submit">
+                                Send <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+    <script src="js/menu.js"></script>
+    <script src="js/proyects.js"></script>
 </html>

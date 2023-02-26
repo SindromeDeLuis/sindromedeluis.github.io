@@ -44,10 +44,11 @@ html, body {
             margin: 0 15px;
             padding: 3px;
             text-decoration: none;
-            transition: .5s;
+            transition: transform 0.5s ease-in;
         }
         .header .menu ul li a:hover {
             color: #b81414;
+            
         }
         .header .nav-icon {
             padding: 5px 10px;
@@ -57,22 +58,22 @@ html, body {
         }
 
     .home {
-        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/fondo.jpg);
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/bg_home.jpg);
         background-size: cover;
         height: 100vh;
         color: #fff;
         display: flex;
         align-items: center;
     }
-        .home .banner-container{
-            background-color: #1e2326;
+        .home .home-container {
+            background-color: #1f1f1f;
             max-width: 350px;
             text-align: center;
             padding: 20px;
             margin: auto;
             border-radius: 40px;
         }
-        .home .banner-container img{
+        .home .home-container img {
             margin-top: 40px;
             border: 5px solid #b81414;
             display: block;
@@ -80,20 +81,20 @@ html, body {
             margin: auto;
             border-radius: 100%;
         }
-        .home .banner-container h1{
+        .home .home-container h1 {
             margin-bottom: 3px;
         }
-        .home .banner-container h2{
+        .home .home-container h2 {
             font-size: 18px;
             font-weight: normal;
         }
-        .home .banner-container .nick{
+        .home .home-container .nick {
             font-size: 15px;
             font-weight: lighter;
             margin-bottom: 10px;
             color: #8C96A5;
         }
-        .home .banner-container .rrss a{
+        .home .home-container .rrss a {
             color: #fff;
             display: inline-block;
             text-decoration: none;
@@ -106,86 +107,95 @@ html, body {
             font-size: 20px;
             transition: .3s;
         }
-        .home .banner-container .rrss a:hover{
-            background-color: #1CB698;
+        .home .home-container .rrss a:hover {
+            background-color: #b81414;
         }
         
-    .portfolio{
-        background-color: #252A2E;
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        background-color: #1f1f1f;
         height: 100vh;
         color: #fff;
-        padding: 50px 20px;
+        padding: 45px 20px;
     }
-        .portfolio .portfolio-container{
-            max-width: 1100px;
-            margin: auto;
-        }
-        .portfolio h2{
+        .portfolio h2 {
             font-size: 48px;
             text-align: center;
             padding: 20px 0;
         }
-        .portfolio .galeria{
+        .portfolio .portfolio-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+        .portfolio .portfolio-container .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            align-items: center;
         }
-            .portfolio .galeria .proyecto{
+            .portfolio .portfolio-container .gallery .project {
                 position: relative;
                 flex: 1 1 100%;
-                max-width: 22vw;
+                max-width: 21vw;
                 height: fit-content;
                 margin: 10px;
                 cursor: pointer;
             }
-            .portfolio .galeria .proyecto img{
-                width: 100%;
-                display: block;
-            }
-            .portfolio .galeria .proyecto .overlay{
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                transition: 1s;
-                font-size: 18px;
-                letter-spacing: 3px;
-                opacity: 0;
-            }
-                .portfolio .galeria .proyecto .overlay h3{
-                    margin-bottom: 20px;
+                .portfolio .portfolio-container .gallery .project a {
+                    text-decoration: none;
+                }
+                .portfolio .portfolio-container .gallery .project img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 20px;
+                }
+                .portfolio .portfolio-container .gallery .project .overlay{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     transition: 1s;
+                    font-size: 18px;
+                    color: #fff;
+                    letter-spacing: 3px;
+                    opacity: 0;
+                    border-radius: 20px;
                 }
-                .portfolio .galeria .proyecto .overlay:hover{
-                    opacity: 1;
-                }
-                .portfolio .galeria .proyecto .overlay:hover h3{
-                    margin-bottom: 0px;
-                }
+                    .portfolio .portfolio-container .gallery .project .overlay h3{
+                        margin-bottom: 20px;
+                        transition: 1s;
+                    }
+                    .portfolio .portfolio-container .gallery .project .overlay:hover{
+                        opacity: 1;
+                    }
+                    .portfolio .portfolio-container .gallery .project .overlay:hover h3{
+                        margin-bottom: 1em;
+                    }
     
     .contact{
-        background-image: url(img/contact_bg.png);
-        background-color: #1e2326;
+        background-color: #1f1f1f;
         color: #fff;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         height: 100vh;
-        padding: 50px 0;
+        padding: 45px 0;
     }
-        .contact .contact-container{
-            flex: 1 1 100%;
-            max-width: 1100px;
-            margin: 0 20VW;
-        }
         .contact h2{
             font-size: 48px;
             text-align: center;
             padding: 20px 0;
+        }
+        .contact .contact-container{
+            flex: 1 1 100%;
+            max-width: 1100px;
+            margin: 0 20VW;
         }
             .contact input, .contact textarea{
                 display: block;
@@ -197,34 +207,34 @@ html, body {
                 color: #fff;
                 font-size: 18px;
             }
-        .contact button{
-            cursor: pointer;
-            background-color: transparent;
-            border: 2px solid #fff;
-            width: fit-content;
-            display: block;
-            margin: 20px auto;
-            padding: 10px 22px;
-            font-size: 16px;
-            color: #fff;
-            position: relative;
-            z-index: 10;
-        }
-            .contact button .overlay{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 0;
-                height: 100%;
-                background-color: #1CB698;
-                z-index: -1;
-                transition: 1s;
+            .contact button{
+                cursor: pointer;
+                background-color: transparent;
+                border: 2px solid #fff;
+                width: fit-content;
+                display: block;
+                margin: 20px auto;
+                padding: 10px 22px;
+                font-size: 16px;
+                color: #fff;
+                position: relative;
+                z-index: 10;
             }
-            .contact button:hover .overlay{
-                width: 100%;
-            }
+                .contact button .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background-color: #b81414;
+                    z-index: -1;
+                    transition: 1s;
+                }
+                .contact button:hover .overlay{
+                    width: 100%;
+                }
 
-@media all and (max-width:980px){
+@media screen and (max-width:980px){
     nav{
         display: none;
     }
@@ -232,40 +242,62 @@ html, body {
         display: block;
         position: absolute;
         color: #fff;
-        left: 80%;
+        top: 60%;
+        left: 84%;
+        font-size: 1.5em;
     }
-    nav.responsive{
+    header .show{
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
+        top: 55px;
         background-color: #252A2E;
         width: 180px;
+        z-index: 99;
+        transition: transform 0.5s ease-in;
     }
-    nav.responsive ul{
+    header .show ul{
         display: block !important;
     }
-    nav.responsive ul li{
+    header .show ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+        margin: 8px;
     }
 }
-@media screen and (max-width:700px){
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
+@media screen and (max-width:768px){
+    html, body {
+        overflow-y: scroll;
     }
 
-    .contact .fila{
-        display: block;
+    .portfolio {
+        height: 100%;
+        padding: 20px;
     }
-    .contact .fila .col{
-        width: 100%;
+        .portfolio .portfolio-container .gallery{
+            width: 100%;
+        }
+        .portfolio .portfolio-container .gallery .project{
+            max-width: 40vw;
+            margin-bottom: 20px;
+        }
+        .portfolio .portfolio-container .gallery .project img{
+            width: 100%;
+        }
+
+    .contact {
+        padding: 20px;
     }
+}
+@media screen and (max-width:480px){
+    .portfolio .portfolio-container .gallery .project{
+        max-width: 100%;
+    }
+
+    .contact {
+        height: 100%;
+    }
+        .contact .contact-container {
+            margin: 0;
+        }
 }

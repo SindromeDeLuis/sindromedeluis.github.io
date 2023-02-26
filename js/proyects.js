@@ -37,17 +37,19 @@ const projects = [
     },
 ]
 
-const projectList = document.querySelector("#galeria")
-const fragmentProject = document.createDocumentFragment()
+const projectList = document.querySelector("#gallery")
 const projectTemplate = document.querySelector("#project-template")
+const projectFragment = document.createDocumentFragment()
 
 projects.forEach(project => {
     const clone = projectTemplate.content.firstElementChild.cloneNode(true)
+
     clone.querySelector("#name-project").textContent = project.name;
     clone.querySelector("#subtitle").textContent = project.subtitle;
     clone.querySelector("#image").src = "img/"+project.preview;
     clone.querySelector("#url").setAttribute("href", project.url);
     
-    fragmentProject.appendChild(clone)
+    projectFragment.appendChild(clone)
 })
-projectList.appendChild(fragmentProject)
+
+projectList.appendChild(projectFragment)
