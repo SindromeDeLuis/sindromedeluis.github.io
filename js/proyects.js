@@ -1,39 +1,27 @@
 const projects = [
     p1 = {
+        name: "E-commerce template",
+        subtitle: "E-commerce",
+        preview: "p2.png",
+        url: "https://github.com/SindromeDeLuis/E-commerce",
+        url2: "https://sindromedeluis.github.io/E-commerce/",
+        technologies: "HTML | CSS | JavaScript",
+    },
+    p2 = {
         name: "Club de Tae Kwon Do Valle de San Diego",
         subtitle: "Website",
         preview: "p1.png",
-        url: "https://sindromedeluis.github.io/tae-kwon-do-san-diego/",
-    },
-    p2 = {
-        name: "Project 2",
-        subtitle: "Subtitle 2",
-        preview: "p2.jpg",
-        url: "",
+        url: "https://github.com/SindromeDeLuis/tae-kwon-do-san-diego",
+        url2: "https://sindromedeluis.github.io/tae-kwon-do-san-diego/",
+        technologies: "HTML | CSS | JavaScript",
     },
     p3 = {
         name: "Project 3",
         subtitle: "Subtitle 3",
         preview: "p3.jpg",
         url: "",
-    },
-    p4 = {
-        name: "Project 4",
-        subtitle: "Subtitle 4",
-        preview: "p4.jpg",
-        url: "",
-    },
-    p5 = {
-        name: "Project 5",
-        subtitle: "Subtitle 5",
-        preview: "p5.jpg",
-        url: "",
-    },
-    p6 = {
-        name: "Project 6",
-        subtitle: "Subtitle 6",
-        preview: "p6.jpg",
-        url: "",
+        url2: "",
+        technologies: "",
     },
 ]
 
@@ -48,9 +36,23 @@ projects.forEach(project => {
     clone.querySelector("#subtitle").textContent = project.subtitle
     clone.querySelector("#image").src = "images/projects/"+project.preview
     clone.querySelector("#image").loading = "lazy"
+    clone.querySelector("#technology").textContent = project.technologies
     clone.querySelector("#url").setAttribute("href", project.url)
+    clone.querySelector("#url2").setAttribute("href", project.url2)
     
     projectFragment.appendChild(clone)
 })
 
 projectList.appendChild(projectFragment)
+
+
+const images = document.querySelectorAll(".project img")
+const descriptions = document.querySelectorAll(".project .description")
+
+images.forEach((img, i) => {
+    img.addEventListener("click", () => {showDescription(i)});
+})
+
+function showDescription(i) {
+    descriptions[i].classList.toggle("show");
+}
