@@ -22,10 +22,10 @@ html, body {
 }
     .header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         width: 100%;
-        padding: 15px 10vw;
+        padding: 20px 6vw;
         margin: auto;
         position: fixed;
         z-index: 99;
@@ -35,30 +35,34 @@ html, body {
             color: #b81414;
             text-decoration: none;
         }
-        .header ul {
+        .header .navbar {
             display: flex;
-            list-style: none;
         }
-        .header .menu ul li a {
-            color: #fff;
-            margin: 0 15px;
-            padding: 3px;
-            text-decoration: none;
-            transition: transform 0.5s ease-in;
-        }
-        .header .menu ul li a:hover {
-            color: #b81414;
-            
-        }
+            .header .navbar ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .header .navbar li {
+                    position: relative;
+                    list-style: none;
+                }
+                    .header .navbar ul li a {
+                        color: #fff;
+                        margin: 0 15px;
+                        padding: 3px;
+                        text-decoration: none;
+                        transition: transform 0.5s ease-in;
+                    }
+                    .header .navbar ul li a:hover {
+                        color: #b81414;
+                    }
         .header .nav-icon {
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none;
+             display: none;
         }
 
     .home {
-        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/bg_home.jpg);
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../images/bg_home.jpg);
         background-size: cover;
         height: 100vh;
         color: #fff;
@@ -272,37 +276,43 @@ html, body {
                     width: 100%;
                 }
 
-@media screen and (max-width:980px){
-    nav{
+/* Large devices (laptops/desktops, 1024px and down) */
+@media screen and (max-width:1024px){
+    .header .logo {
         display: none;
     }
+    header .navbar{
+        font-size: 32px;
+    }
+        header .navbar ul{
+            background-color: #252A2E;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: -100vw;
+            height: 100vh;
+            width: 100vw;
+            padding: 5vh 0 0 10px;
+            transition: 0.5s;
+        }
+            .header .navbar ul.show {
+                left: 0;
+            }
+            .header .navbar ul li {
+                border-bottom: 1px solid #fff;
+                padding: 10px 0;
+                margin: 8px;
+            }
     .header .nav-icon{
         display: block;
-        position: absolute;
         color: #fff;
-        top: 60%;
-        left: 84%;
         font-size: 1.5em;
-    }
-    header .show{
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 55px;
-        background-color: #252A2E;
-        width: 180px;
-        z-index: 99;
-        transition: transform 0.5s ease-in;
-    }
-    header .show ul{
-        display: block !important;
-    }
-    header .show ul li{
-        border-bottom: 1px solid #fff;
-        padding: 10px 0;
-        margin: 8px;
+        cursor: pointer;
     }
 }
+
+/* Medium devices (tablets, 768px and down) */
 @media screen and (max-width:768px){
     html, body {
         overflow-y: scroll;
@@ -342,6 +352,8 @@ html, body {
         padding: 20px;
     }
 }
+
+/* Small devices (phones, 480px and down) */
 @media screen and (max-width:480px){
     .portfolio .portfolio-container .gallery .project{
         max-width: 100%;

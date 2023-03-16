@@ -46,7 +46,7 @@ projects.forEach(project => {
 
     clone.querySelector("#name-project").textContent = project.name
     clone.querySelector("#subtitle").textContent = project.subtitle
-    clone.querySelector("#image").src = "img/projects/"+project.preview
+    clone.querySelector("#image").src = "images/projects/"+project.preview
     clone.querySelector("#image").loading = "lazy"
     clone.querySelector("#url").setAttribute("href", project.url)
     

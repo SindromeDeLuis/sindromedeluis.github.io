@@ -24,7 +24,7 @@ const skillFragment = document.createDocumentFragment()
 skills.forEach(skill => {
     const clone = skillTemplate.content.firstElementChild.cloneNode(true)
 
-    clone.querySelector("#image2").src = "img/skills/"+skill.icon
+    clone.querySelector("#image2").src = "images/skills/"+skill.icon
     clone.querySelector("#image2").loading = "lazy"
     
     skillFragment.appendChild(clone)
