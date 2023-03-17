@@ -189,13 +189,11 @@ html, body {
                 .portfolio .portfolio-container .gallery .project a {
                     text-decoration: none;
                 }
-                .portfolio .portfolio-container .gallery .project img {
+                .portfolio .portfolio-container .gallery .project .show img {
                     width: 100%;
                     display: block;
                     border-radius: 16px;
                     min-height: 180px;
-                    border-bottom-left-radius: 0;
-                    border-bottom-right-radius: 0;
                 }
                 .portfolio .portfolio-container .gallery .project .show .description {
                     display: none;
@@ -210,7 +208,6 @@ html, body {
                     border-top: 0;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
-                    animation: slideaway 1s;
                 }
                 .portfolio .portfolio-container .gallery .project .overlay{
                     position: absolute;
@@ -250,6 +247,10 @@ html, body {
                     .portfolio .portfolio-container .gallery .project .overlay:hover h3{
                         margin-bottom: 1em;
                     }
+                .portfolio .portfolio-container .gallery .project .show:hover img {
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
                 .portfolio .portfolio-container .gallery .project .show:hover .description {
                     display: flex;
                     opacity: 1;
