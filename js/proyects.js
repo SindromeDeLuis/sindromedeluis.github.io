@@ -16,12 +16,12 @@ const projects = [
         technologies: "HTML | CSS | JavaScript",
     },
     p3 = {
-        name: "Project 3",
-        subtitle: "Subtitle 3",
-        preview: "p3.jpg",
-        url: "",
-        url2: "",
-        technologies: "",
+        name: "News blog template",
+        subtitle: "Website",
+        preview: "p3.png",
+        url: "https://github.com/SindromeDeLuis/news-blog",
+        url2: "https://sindromedeluis.github.io/news-blog/",
+        technologies: "HTML | CSS | JavaScript",
     },
 ]
 
