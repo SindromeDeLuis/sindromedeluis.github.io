@@ -308,10 +308,10 @@ html, body {
     .header .logo {
         display: none;
     }
-    header .navbar{
+    .header .navbar {
         font-size: 32px;
     }
-        header .navbar ul{
+        .header .navbar ul {
             background-color: #252A2E;
             display: flex;
             flex-direction: column;
@@ -331,12 +331,20 @@ html, body {
                 padding: 10px 0;
                 margin: 8px;
             }
-    .header .nav-icon{
+                .header .navbar ul li:hover {
+                    border-bottom-color: #b81414;
+                }
+    .header .nav-icon {
         display: block;
         color: #fff;
         font-size: 1.5em;
         cursor: pointer;
+        z-index: 99;
+        transition: 0.5s;
     }
+        .header .nav-icon .hide {
+            display: none;
+        }
 }
 
 /* Medium devices (tablets, 768px and down) */
