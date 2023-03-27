@@ -306,7 +306,7 @@ html, body {
                 color: #fff;
                 position: relative;
                 z-index: 10;
-                transition: 1s;
+                transition: .5s;
             }
             .contact button:hover {
                 background-color: #b81414;
@@ -337,7 +337,7 @@ html, body {
             }
             .header .navbar ul li {
                 border-bottom: 1px solid #fff;
-                padding: 10px 0;
+                padding: 10px 15px;
                 margin: 8px;
             }
                 .header .navbar ul li:hover {
