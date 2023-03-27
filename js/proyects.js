@@ -5,7 +5,7 @@ const projects = [
         preview: "p2.png",
         url: "https://github.com/SindromeDeLuis/E-commerce",
         url2: "https://sindromedeluis.github.io/E-commerce/",
-        technologies: "HTML | CSS | JavaScript",
+        technologies: ["HTML", "CSS", "JavaScript"],
     },
     p2 = {
         name: "Club de Tae Kwon Do Valle de San Diego",
@@ -13,7 +13,7 @@ const projects = [
         preview: "p1.png",
         url: "https://github.com/SindromeDeLuis/tae-kwon-do-san-diego",
         url2: "https://sindromedeluis.github.io/tae-kwon-do-san-diego/",
-        technologies: "HTML | CSS | JavaScript",
+        technologies: ["HTML", "CSS", "JavaScript"],
     },
     p3 = {
         name: "News blog template",
@@ -21,7 +21,7 @@ const projects = [
         preview: "p3.png",
         url: "https://github.com/SindromeDeLuis/news-blog",
         url2: "https://sindromedeluis.github.io/news-blog/",
-        technologies: "HTML | CSS | JavaScript",
+        technologies: ["HTML", "CSS", "JavaScript"],
     },
 ]
 
@@ -36,7 +36,12 @@ projects.forEach(project => {
     clone.querySelector("#subtitle").textContent = project.subtitle
     clone.querySelector("#image").src = "images/projects/"+project.preview
     clone.querySelector("#image").loading = "lazy"
-    clone.querySelector("#technology").textContent = project.technologies
+    project.technologies.forEach(technology => {
+        let li = document.createElement("li")
+        li.appendChild(document.createTextNode(technology))
+        li.setAttribute("id", technology.toLowerCase())
+        clone.querySelector("#technologies").appendChild(li)
+    })
     clone.querySelector("#url").setAttribute("href", project.url)
     clone.querySelector("#url2").setAttribute("href", project.url2)
     

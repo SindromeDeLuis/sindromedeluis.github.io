@@ -214,20 +214,41 @@ html, body {
                     justify-content: center;
                     background-color: #252A2E;
                     height: 32vh;
-                    padding: 4px;
                     border-top: 0;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
                 }
                     .portfolio .portfolio-container .gallery .project .description h3 {
-                        margin-bottom: 12px;
+                        display: flex;
+                        align-items: center;
+                        height: 30%;
+                        padding: 0 12px;
                     }
-                    .portfolio .portfolio-container .gallery .project .description p {
-                        margin: 8px 0;
-                    }
+                    .portfolio .portfolio-container .gallery .project .description p,
+                    .portfolio .portfolio-container .gallery .project .description ul,
                     .portfolio .portfolio-container .gallery .project .description .links {
-                        margin-top: 8px;
+                        display: flex;
+                        align-items: center;
+                        height: 20%;
                     }
+                        .portfolio .portfolio-container .gallery .project .description ul li {
+                            display: flex;
+                            font-size: 14px;
+                            font-weight:600;
+                            margin: 0 4px;
+                            padding: 4px 8px;
+                            border-radius: 12px;
+                        }
+                            .portfolio .portfolio-container .gallery .project .description ul li#html {
+                                background: orangered;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#css {
+                                background: dodgerblue;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#javascript {
+                                background: yellow;
+                                color: #252A2E;
+                            }
                         .portfolio .portfolio-container .gallery .project .description .links a {
                             font-size: 20px;
                             width: 36px;
@@ -339,7 +360,6 @@ html, body {
             align-content: flex-start;
         }
             .header .nav-icon i:nth-child(2) {
-                
                 font-size: 1.25em;
             }
         .header .nav-icon .hide {
