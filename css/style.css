@@ -41,17 +41,33 @@ html, body {
                 .header .navbar li {
                     position: relative;
                     list-style: none;
+                    margin: 0 15px;
+                    padding: 3px;
                 }
                     .header .navbar ul li a {
                         color: #fff;
-                        margin: 0 15px;
-                        padding: 3px;
                         text-decoration: none;
                         transition: .3s;
                     }
-                    .header .navbar ul li a:hover {
-                        color: #b81414;
-                    }
+                        .header .navbar ul li a::after {
+                            content: "";
+                            background: #b81414;
+                            position: absolute;
+                            border-radius: 12px;
+                            bottom: -3px;
+                            height: 3px;
+                            left: 0;
+                            transition: all .3s ease-out 0s;
+                            width: 0;
+                            z-index: -1;
+                        }
+                        .header .navbar ul li a:hover {
+                            color: #b81414;
+                            font-weight: 700;
+                        }
+                        .header .navbar ul li a:hover::after {
+                            width: 100%;
+                        }
         .header .nav-icon {
              display: none;
         }
@@ -306,6 +322,9 @@ html, body {
                 .header .navbar ul li:hover {
                     border-bottom-color: #b81414;
                 }
+                .header .navbar ul li a i {
+                    display: none;
+                }
     .header .nav-icon {
         display: block;
         color: #fff;
@@ -319,6 +338,10 @@ html, body {
             display: flex;
             align-content: flex-start;
         }
+            .header .nav-icon i:nth-child(2) {
+                
+                font-size: 1.25em;
+            }
         .header .nav-icon .hide {
             visibility: hidden;
             opacity: 0;
