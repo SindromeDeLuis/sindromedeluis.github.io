@@ -1,5 +1,13 @@
 const projects = [
-    p1 = {
+    p3 = {
+        name: "Beatrice Bot",
+        subtitle: "Web App with a chatbot",
+        preview: "p4.png",
+        url: "https://github.com/SindromeDeLuis/betricebot",
+        url2: "https://beatricebot.glitch.me/",
+        technologies: ["HTML", "CSS", "Nodejs", "Expressjs", "MongoDB", "Dialogflow ES"],
+    },
+    p4 = {
         name: "E-commerce template",
         subtitle: "E-commerce",
         preview: "p2.png",
@@ -7,7 +15,7 @@ const projects = [
         url2: "https://sindromedeluis.github.io/E-commerce/",
         technologies: ["HTML", "CSS", "JavaScript"],
     },
-    p2 = {
+    p5 = {
         name: "Club de Tae Kwon Do Valle de San Diego",
         subtitle: "Website",
         preview: "p1.png",
@@ -15,7 +23,7 @@ const projects = [
         url2: "https://sindromedeluis.github.io/tae-kwon-do-san-diego/",
         technologies: ["HTML", "CSS", "JavaScript"],
     },
-    p3 = {
+    p6 = {
         name: "News blog template",
         subtitle: "Website",
         preview: "p3.png",
