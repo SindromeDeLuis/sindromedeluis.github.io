@@ -102,11 +102,12 @@ html, body {
         .home .home-container h2 {
             font-size: 20px;
             font-weight: normal;
+            margin-bottom: 8px;
         }
         .home .home-container .nick {
             font-size: 16px;
-            font-weight: lighter;
-            margin-bottom: 10px;
+            font-weight: normal;
+            margin-bottom: 8px;
             color: #8C96A5;
         }
         .home .home-container .rrss a,
