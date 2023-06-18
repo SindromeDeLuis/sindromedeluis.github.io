@@ -15,6 +15,22 @@ const skills = [
         name: "Bootstrap",
         icon: "bootstrap.svg",
     },
+    s5 = {
+        name: "MongoDB",
+        icon: "mongodb.svg",
+    },
+    s6 = {
+        name: "Express.js",
+        icon: "expressjs.svg",
+    },
+    s7 = {
+        name: "Vue.js",
+        icon: "vuejs.svg",
+    },
+    s8 = {
+        name: "Node.js",
+        icon: "nodejs.svg",
+    },
 ]
 
 const skillList = document.querySelector("#gallery2")

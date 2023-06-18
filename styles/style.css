@@ -154,7 +154,7 @@ html, body {
                 .skills .skills-container .gallery2 .skill {
                     position: relative;
                     flex: 1 1 100%;
-                    max-width: 20vw;
+                    max-width: 16vw;
                 }
                     .skills .skills-container .gallery2 .skill img {
                         width: 100%;
