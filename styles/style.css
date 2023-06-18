@@ -445,9 +445,6 @@ html, body {
         .portfolio .portfolio-container .gallery .project .show img{
             width: 100%;
         }
-        .portfolio .portfolio-container .gallery .project .show .description {
-            height: 28vh;
-        }
             .portfolio .portfolio-container .gallery .project .description h3 {
                 font-size: 24px;
             }
