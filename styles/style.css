@@ -223,7 +223,7 @@ html, body {
                     text-align: center;
                     justify-content: space-around;
                     background-color: #252A2E;
-                    min-height: 28vh;
+                    min-height: 24vh;
                     max-height: 32vh;
                     width: 100%;
                     padding: 12px;
@@ -244,7 +244,9 @@ html, body {
                         align-items: center;
                         justify-content: center;
                         height: 20%;
+                        margin-top: 12px;
                     }
+
                         .portfolio .portfolio-container .gallery .project .description ul li {
                             display: flex;
                             font-size: 14px;
@@ -278,6 +280,24 @@ html, body {
                             .portfolio .portfolio-container .gallery .project .description ul li#dialogflow\ es {
                                 background: #fe9900;
                                 color: #252A2E;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#php {
+                                background: #8892be;
+                                color: #1f1f1f
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#laravel {
+                                background: #fe2c21;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#vuejs {
+                                background: #81c784;
+                                color: #455a64;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#bootstrap {
+                                background: #7610f6;
+                            }
+                            .portfolio .portfolio-container .gallery .project .description ul li#mysql {
+                                background: #e2dfde;
+                                color: #fe9900;
                             }
                         .portfolio .portfolio-container .gallery .project .description .links a {
                             font-size: 20px;

@@ -1,11 +1,19 @@
 const projects = [
-    p3 = {
-        name: "Beatrice Bot",
-        subtitle: "Web App with a chatbot",
+    p2 = {
+        name: "Beatrice: Chatbot for English Practice",
+        subtitle: "WebApp with chatbot",
         preview: "p4.png",
         url: "https://github.com/SindromeDeLuis/betricebot",
         url2: "https://beatricebot.glitch.me/",
         technologies: ["HTML", "CSS", "Nodejs", "Expressjs", "MongoDB", "Dialogflow ES"],
+    },
+    p3 = {
+        name: "Gestor de Trabajos de Grado para la Universidad José Antonio Páez",
+        subtitle: "WebApp",
+        preview: "p5.png",
+        url: "#",
+        url2: "https://www.flipsnack.com/BEBBD966AED/new-flipbook.html",
+        technologies: ["PHP", "Laravel", "Vuejs", "Bootstrap", "MySQL"],
     },
     p4 = {
         name: "E-commerce template",
@@ -24,7 +32,7 @@ const projects = [
         technologies: ["HTML", "CSS", "JavaScript"],
     },
     p6 = {
-        name: "News blog template",
+        name: "News/blog template",
         subtitle: "Website",
         preview: "p3.png",
         url: "https://github.com/SindromeDeLuis/news-blog",
