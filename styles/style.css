@@ -8,7 +8,14 @@
 html, body {
     scroll-behavior: smooth;
 }
-
+body::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: #b81414;
+    border-radius: 6px;
+}
 .container {
     display: flex;
     flex-flow: column nowrap;
