@@ -33,15 +33,15 @@ const skills = [
     },
 ]
 
-const skillList = document.querySelector("#gallery2")
+const skillList = document.querySelector("#skills-gallery")
 const skillTemplate = document.querySelector("#skill-template")
 const skillFragment = document.createDocumentFragment()
 
 skills.forEach(skill => {
     const clone = skillTemplate.content.firstElementChild.cloneNode(true)
 
-    clone.querySelector("#image2").src = "images/skills/"+skill.icon
-    clone.querySelector("#image2").loading = "lazy"
+    clone.querySelector("#skill-image").src = "images/skills/"+skill.icon
+    clone.querySelector("#skill-image").alt = skill.name
     
     skillFragment.appendChild(clone)
 })

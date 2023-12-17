@@ -167,6 +167,7 @@ body::-webkit-scrollbar-thumb {
                         width: 100%;
                         display: block;
                         border-radius: 20px;
+                        transition: .5s;
                     }
                     .skills .skills-container .gallery2 .skill:hover img {
                         transform: scale(1.25);
