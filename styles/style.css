@@ -224,7 +224,9 @@ body::-webkit-scrollbar-thumb {
                     min-height: 180px;
                 }
                 .portfolio .portfolio-container .gallery .project .show .description {
-                    display: none;
+                    display: flex;
+                    position: absolute;
+                    z-index: 1;
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
@@ -237,6 +239,9 @@ body::-webkit-scrollbar-thumb {
                     border-top: 0;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0.3s linear,opacity 0.3s linear;
                 }
                     .portfolio .portfolio-container .gallery .project .description h3 {
                         display: flex;
@@ -318,10 +323,9 @@ body::-webkit-scrollbar-thumb {
                     border-bottom-right-radius: 0;
                 }
                 .portfolio .portfolio-container .gallery .project .show:hover .description {
-                    display: flex;
+                    visibility: visible;
                     opacity: 1;
-                    position: absolute;
-                    z-index: 1;
+                    transition: visibility 0.25s linear,opacity 0.25s linear;
                 }
     
     .contact{
