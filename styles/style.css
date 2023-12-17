@@ -6,7 +6,6 @@
     font-family: 'Roboto', sans-serif;
 }
 html, body {
-    overflow-y: hidden;
     scroll-behavior: smooth;
 }
 
