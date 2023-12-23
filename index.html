@@ -24,8 +24,8 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="#home"><i class="fas fa-user"></i> PROFILE</a></li>
-                        <li><a href="#skills"><i class="fas fa-gear"></i> SKILLS</a></li>
                         <li><a href="#projects"><i class="fas fa-suitcase"></i> PROJECTS</a></li>
+                        <li><a href="#skills"><i class="fas fa-gear"></i> SKILLS</a></li>
                         <li><a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a></li>
                     </ul>
                 </nav>
@@ -49,21 +49,6 @@
                     </div>
                 </section>
 
-                <section class="skills" id="skills">
-                    <h2>SKILLS</h2>
-                    <div class="skills-container">
-                        <div class="gallery2" id="skills-gallery">
-                            <!-- skill-template -->
-                        </div>
-                    </div>
-                </section>
-
-                <template id="skill-template">
-                    <div class="skill">
-                        <img src="" alt="" loading="lazy" id="skill-image" />
-                    </div>
-                </template>
-
                 <section class="portfolio" id="projects">
                     <h2>PROJECTS</h2>
                     <p>My recent work</p>
@@ -75,7 +60,7 @@
                 </section>
 
                 <template id="project-template">
-                    <div class="project">
+                    <article class="project">
                         <div class="show">
                             <img src="" alt="" loading="lazy" id="project-image">
                             <div class="description">
@@ -88,6 +73,21 @@
                                 </div>
                             </div>
                         </div>
+                    </article>
+                </template>
+
+                <section class="skills" id="skills">
+                    <h2>SKILLS</h2>
+                    <div class="skills-container">
+                        <div class="gallery2" id="skills-gallery">
+                            <!-- skill-template -->
+                        </div>
+                    </div>
+                </section>
+
+                <template id="skill-template">
+                    <div class="skill">
+                        <img src="" alt="" loading="lazy" id="skill-image" />
                     </div>
                 </template>
 

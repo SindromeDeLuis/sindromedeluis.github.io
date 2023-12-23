@@ -1,27 +1,35 @@
 const projects = [
+    /*p1 = {
+        name: "Dra. Nayira García Siso | Cirujano plástico",
+        subtitle: "Personal website for Dr. Nayira Garcia Siso, Plastic Surgeon",
+        preview: "p6.png",
+        github: "",
+        demo: "",
+        technologies: ["HTML", "CSS", "JavaScript", "Vuejs"],
+    },*/
     p2 = {
         name: "Beatrice: Chatbot for English Practice",
-        subtitle: "WebApp with chatbot",
+        subtitle: "WebApp with chatbot to improve English",
         preview: "p4.png",
         github: "https://github.com/SindromeDeLuis/betricebot",
         demo: "https://beatricebot.onrender.com/",
         technologies: ["HTML", "CSS", "Nodejs", "Expressjs", "MongoDB", "Dialogflow ES"],
     },
     p3 = {
-        name: "Gestor de Trabajos de Grado para la Universidad José Antonio Páez",
-        subtitle: "WebApp",
-        preview: "p5.png",
-        github: "https://github.com/SindromeDeLuis/gestor-tesis-ujap",
-        demo: "https://www.flipsnack.com/BEBBD966AED/new-flipbook.html",
-        technologies: ["PHP", "Laravel", "Vuejs", "Bootstrap", "MySQL"],
-    },
-    p4 = {
-        name: "E-commerce template",
-        subtitle: "E-commerce",
+        name: "E-commerce",
+        subtitle: "E-commerce template",
         preview: "p2.png",
         github: "https://github.com/SindromeDeLuis/E-commerce",
         demo: "https://sindromedeluis.github.io/E-commerce/",
         technologies: ["HTML", "CSS", "JavaScript"],
+    },
+    p4 = {
+        name: "Gestor de Trabajos de Grado",
+        subtitle: "Gestor de Trabajos de Grado para la Universidad José Antonio Páez",
+        preview: "p5.png",
+        github: "https://github.com/SindromeDeLuis/gestor-tesis-ujap",
+        demo: "https://www.flipsnack.com/BEBBD966AED/new-flipbook.html",
+        technologies: ["Vuejs", "Bootstrap", "PHP", "Laravel", "MySQL"],
     },
     p5 = {
         name: "Club de Tae Kwon Do Valle de San Diego",

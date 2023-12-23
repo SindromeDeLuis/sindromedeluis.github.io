@@ -79,7 +79,7 @@ body::-webkit-scrollbar-thumb {
         }
 
     .home {
-        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../images/bg_home.jpg);
+        background: linear-gradient(to top, rgba(30,35,38,.7), rgba(30,35,38,1)), url(../images/bg_home.jpg);
         background-size: cover;
         height: 100vh;
         color: #fff;
@@ -222,6 +222,7 @@ body::-webkit-scrollbar-thumb {
                     display: block;
                     border-radius: 16px;
                     min-height: 180px;
+                    transition: 0.3s;
                 }
                 .portfolio .portfolio-container .gallery .project .show .description {
                     display: flex;
@@ -233,9 +234,9 @@ body::-webkit-scrollbar-thumb {
                     justify-content: space-around;
                     background-color: #252A2E;
                     min-height: 24vh;
-                    max-height: 32vh;
+                    /*max-height: 32vh;*/   
                     width: 100%;
-                    padding: 12px;
+                    padding: 16px 12px;
                     border-top: 0;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
@@ -256,14 +257,14 @@ body::-webkit-scrollbar-thumb {
                         align-items: center;
                         justify-content: center;
                         height: 20%;
-                        margin-top: 12px;
+                        margin-top: 16px;
                     }
 
                         .portfolio .portfolio-container .gallery .project .description ul li {
                             display: flex;
                             font-size: 14px;
                             font-weight:600;
-                            margin: 2px 4px;
+                            margin: 4px 4px;
                             padding: 4px 8px;
                             border-radius: 12px;
                         }
@@ -321,6 +322,7 @@ body::-webkit-scrollbar-thumb {
                 .portfolio .portfolio-container .gallery .project .show:hover img {
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
+                    transition: 0.25s;
                 }
                 .portfolio .portfolio-container .gallery .project .show:hover .description {
                     visibility: visible;
@@ -377,9 +379,10 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (min-width:1024px){
-    .portfolio .portfolio-container .gallery div:nth-child(n+4) .show:hover {
+    .portfolio .portfolio-container .gallery .project:nth-child(n+4) .show:hover {
         position: relative;
         top: -24vh;
+        transition: 0.5s;
     }
 }
 /* Large devices (laptops/desktops, 1024px and down) */
