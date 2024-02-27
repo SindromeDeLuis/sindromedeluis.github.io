@@ -212,6 +212,7 @@ body::-webkit-scrollbar-thumb {
                         transition: .5s;
                     }
         
+    .experience,
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -222,7 +223,7 @@ body::-webkit-scrollbar-thumb {
         color: #fff;
         padding: 45px 20px;
     }
-        .portfolio h2 {
+        .experience h2,.portfolio h2 {
             font-size: 48px;
             text-align: center;
             padding: 20px 0;
@@ -232,11 +233,13 @@ body::-webkit-scrollbar-thumb {
             font-size: 20px;
             margin-bottom: 20px;
         }
+        .experience-container,
         .portfolio .portfolio-container {
             max-width: 1366px;
             height: 100%;
             margin: 2vh 0;
         }
+        .experience-gallery,
         .portfolio .portfolio-container .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -387,7 +390,8 @@ body::-webkit-scrollbar-thumb {
             max-width: 1100px;
             margin: 0 20VW;
         }
-            .contact input, .contact textarea{
+            .contact input,
+            .contact textarea{
                 display: block;
                 width: 100%;
                 padding: 18px;
@@ -396,6 +400,11 @@ body::-webkit-scrollbar-thumb {
                 background-color: #252A2E;
                 color: #fff;
                 font-size: 18px;
+            }
+            .contact input:focus-visible,
+            .contact textarea:focus-visible {
+                outline:rgba(184, 20, 20, 0.7) solid 2px; 
+                border-radius: 2px;
             }
             .contact button {
                 cursor: pointer;
