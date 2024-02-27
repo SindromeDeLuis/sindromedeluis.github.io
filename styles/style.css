@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
     .header {
+        background: rgba(30,30,30,0.5);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -47,15 +48,17 @@ body::-webkit-scrollbar-thumb {
                 .header .navbar li {
                     position: relative;
                     list-style: none;
-                    margin: 0 15px;
-                    padding: 3px;
+                    /*margin: 0 15px;*/
+                    /*padding: 3px;*/
                 }
                     .header .navbar ul li a {
+                        padding: 8px 16px;
+                        border-radius: 4px;
                         color: #fff;
                         text-decoration: none;
                         transition: .3s;
                     }
-                        .header .navbar ul li a::after {
+                        /*.header .navbar ul li a::after {
                             content: "";
                             background: #b81414;
                             position: absolute;
@@ -66,14 +69,15 @@ body::-webkit-scrollbar-thumb {
                             transition: all .3s ease-out 0s;
                             width: 0;
                             z-index: -1;
-                        }
+                        }*/
                         .header .navbar ul li a:hover {
-                            color: #b81414;
-                            font-weight: 700;
+                            background: rgba(184, 20, 20, 0.7);
+                            /*font-weight: 700;*/
+                            transition: .5s;
                         }
-                        .header .navbar ul li a:hover::after {
+                        /*.header .navbar ul li a:hover::after {
                             width: 100%;
-                        }
+                        }*/
         .header .nav-icon {
              display: none;
         }
@@ -85,63 +89,94 @@ body::-webkit-scrollbar-thumb {
         color: #fff;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 45px 20px;
     }
         .home .home-container {
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            max-width: 1366px;
+        }
+        .home .home-container .profile-card {
             background-color: #1f1f1f;
             max-width: 350px;
             text-align: center;
             padding: 20px;
             margin: auto;
             border-radius: 40px;
+            grid-column: 1;
+            grid-row: 1 / 4;
+            border: 1px solid #3f3f3f;
         }
-        .home .home-container img {
-            margin-top: 40px;
-            border: 5px solid #b81414;
-            display: block;
-            width: 80%;
-            margin: auto;
-            border-radius: 100%;
+            .profile-card img {
+                margin-top: 40px;
+                border: 5px solid #b81414;
+                display: block;
+                width: 80%;
+                margin: auto;
+                border-radius: 100%;
+            }
+            .profile-card h1 {
+                margin-bottom: 3px;
+            }
+            .profile-card h2 {
+                font-size: 20px;
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+            .profile-card .nick {
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 8px;
+                color: #8C96A5;
+            }
+            .profile-card .rrss a,
+            .portfolio .portfolio-container .gallery .project .description .links a {
+                color: #fff;
+                display: inline-block;
+                text-decoration: none;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                margin: 20px 5px 0 5px;
+                font-size: 20px;
+                transition: .3s;
+            }
+            .profile-card .rrss a:hover,
+            .portfolio .portfolio-container .gallery .project .description .links a:hover {
+                background-color: #b81414;
+            }
+        .home .home-container .about {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+            max-width: 60dvw;
         }
-        .home .home-container h1 {
-            margin-bottom: 3px;
-        }
-        .home .home-container h2 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 8px;
-        }
-        .home .home-container .nick {
-            font-size: 16px;
-            font-weight: normal;
-            margin-bottom: 8px;
-            color: #8C96A5;
-        }
-        .home .home-container .rrss a,
-        .portfolio .portfolio-container .gallery .project .description .links a {
-            color: #fff;
-            display: inline-block;
-            text-decoration: none;
-            border: 1px solid #fff;
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            margin: 20px 5px 0 5px;
-            font-size: 20px;
-            transition: .3s;
-        }
-        .home .home-container .rrss a:hover,
-        .portfolio .portfolio-container .gallery .project .description .links a:hover {
-            background-color: #b81414;
-        }
+            .about > p {
+                margin-bottom: 20px;
+                font-size: 20px;
+                line-height: 1.5;
+            }
     
     .skills {
         display: flex;
-        flex-direction: column;
-        background-color: #1f1f1f;
-        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+        grid-column: 2 / 4;
+        grid-row: 3;
+        /*background-color: #1f1f1f;
+        border-radius: 28px;*/
+        /*height: 100vh;*/
+        /*padding: 45px 20px;*/
+        max-width: 60dvw;
         color: #fff;
-        padding: 45px 20px;
     }
         .skills h2 {
             font-size: 48px;
@@ -149,31 +184,34 @@ body::-webkit-scrollbar-thumb {
             padding: 20px 0;
         }
         .skills .skills-container {
-            max-width: 1100px;
-            margin: auto;
+            /*max-width: 1100px;*/
+            /*margin: auto;*/
         }
             .skills .skills-container .gallery2 {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
                 align-items: center;
+                justify-content: space-evenly;
             }
                 .skills .skills-container .gallery2 .skill {
                     position: relative;
                     flex: 1 1 100%;
-                    max-width: 16vw;
+                    max-width: 12%;
+                    list-style: none;
+                    background-color: #1f1f1f;
+                    border-radius: 12px;
+                    border: 1px solid #3f3f3f;
                 }
                     .skills .skills-container .gallery2 .skill img {
                         width: 100%;
                         display: block;
-                        border-radius: 20px;
                         transition: .5s;
                     }
                     .skills .skills-container .gallery2 .skill:hover img {
-                        transform: scale(1.25);
+                        transform: scale(1.3);
                         transition: .5s;
                     }
-
+        
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -379,10 +417,13 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (min-width:1024px){
+    .portfolio .portfolio-container .gallery .project:nth-child(n+4) .show {
+        transition: 0.9s;
+    }
     .portfolio .portfolio-container .gallery .project:nth-child(n+4) .show:hover {
         position: relative;
         top: -24vh;
-        transition: 0.5s;
+        transition: 0.7s;
     }
 }
 /* Large devices (laptops/desktops, 1024px and down) */

@@ -42,6 +42,7 @@ skills.forEach(skill => {
 
     clone.querySelector("#skill-image").src = "images/skills/"+skill.icon
     clone.querySelector("#skill-image").alt = skill.name
+    clone.querySelector("#skill-image").title = skill.name
     
     skillFragment.appendChild(clone)
 })
