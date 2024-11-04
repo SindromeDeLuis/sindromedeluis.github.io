@@ -12,18 +12,18 @@ const jobs = [
     j2 = {
         image: "j2.png",
         company: "Cargill de Venezuela, S.R.L.",
-        jobTitle: "Engineer in training",
-        department: "Operations Management",
+        jobTitle: "Software Engineer | Training",
+        department: "Operations and Supply Chain Management",
         description: `
             - Coordination of requirements with all departments of the business.
         `,
         duration: "january 2024 - Current",
-        tools: ["Power Apps", "Power BI", "Power Automate"]
+        tools: ["Power Apps", "Power Automate", "Power BI"]
     },
     j3 = {
         image: "j3.png",
         company: "Cargill de Venezuela, S.R.L.",
-        jobTitle: "Intern",
+        jobTitle: "Web Developer | Internship",
         department: "Food Safety, Quality and Regulatories",
         description: `
             - Coordination of requirements with the food safety teams of at all (4) locations.<br>
@@ -32,7 +32,7 @@ const jobs = [
             - Design of dashboards and interactive reports using Power BI.
         `,
         duration: "march 2023 - october 2023",
-        tools: ["Power Apps", "Power BI", "Power Automate"]
+        tools: ["Power Apps", "Power Automate", "Power BI"]
     }
 ]
 
