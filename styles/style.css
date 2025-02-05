@@ -489,6 +489,9 @@ body::-webkit-scrollbar-thumb {
 
 
 @media screen and (min-width:1024px){
+    .portfolio .portfolio-container .gallery .project:nth-child(n+4) {
+        margin-top: 20px;
+    }
     .portfolio .portfolio-container .gallery .project:nth-child(n+4) .show {
         transition: 0.9s;
     }
