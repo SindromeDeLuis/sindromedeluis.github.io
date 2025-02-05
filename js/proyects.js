@@ -7,6 +7,14 @@ const projects = [
         demo: "",
         technologies: ["HTML", "CSS", "JavaScript", "Vuejs"],
     },*/
+    p1 = {
+        name: "Tetris",
+        subtitle: "Tetris Classic in JS",
+        preview: "p6.png",
+        github: "https://github.com/SindromeDeLuis/tetris-classic-js",
+        demo: "https://tetris-classic-js.netlify.app/",
+        technologies: ["HTML", "CSS", "JavaScript"],
+    },
     p2 = {
         name: "Beatrice: Chatbot for English Practice",
         subtitle: "WebApp with chatbot to improve English",
