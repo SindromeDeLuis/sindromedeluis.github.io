@@ -498,7 +498,7 @@ body::-webkit-scrollbar-thumb {
     }
     .portfolio .portfolio-container .gallery .project:nth-child(n+4) .show:hover {
         position: relative;
-        top: -24vh;
+        /*top: -24dvh;*/
         transition: 0.7s;
     }
 }

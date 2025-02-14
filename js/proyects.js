@@ -91,3 +91,12 @@ images.forEach((img, i) => {
         descriptions[i].classList.toggle("show");
     });
 });
+
+
+const projectShow = document.querySelectorAll(".project .show");
+
+projectShow.forEach((p, i) => {
+    p.addEventListener("mouseover", () => {
+        p.style.top = `-${descriptions[i].offsetHeight}px`
+    });
+});
