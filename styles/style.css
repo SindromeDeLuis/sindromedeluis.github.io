@@ -568,16 +568,45 @@ body::-webkit-scrollbar-thumb {
             opacity: 0;
             transition: visibility 0.25s linear,opacity 0.25s linear;
         }
-        
-    .skills {
+    .home {
         height: 100%;
-        padding: 20px;
     }
+    .home .home-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home .home-container .profile-card,
+    .home .home-container .about,
+    .home .home-container .skills {
+        grid-column: 1;
+        margin: 12px 0;
+    }
+
+    .home .home-container .profile-card{
+        grid-row: 1;
+    }
+    .home .home-container .about {
+        grid-row: 2;
+    }
+    .home .home-container .skills{
+        grid-row: 3;
+    }
+
+    .home .home-container .skills,
+    .home .home-container .about {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .about p {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+        
         .skills .skills-container .gallery2{
             width: 100%;
         }
         .skills .skills-container .gallery2 .skill{
-            max-width: 35vw;
+            max-width: 28%;
             margin-bottom: 20px;
         }
         .skills .skills-container .gallery2 .skill img{
