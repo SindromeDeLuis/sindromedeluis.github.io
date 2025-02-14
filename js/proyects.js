@@ -87,9 +87,7 @@ const images = document.querySelectorAll(".project img")
 const descriptions = document.querySelectorAll(".project .description")
 
 images.forEach((img, i) => {
-    img.addEventListener("click", () => {showDescription(i)});
-})
-
-function showDescription(i) {
-    descriptions[i].classList.toggle("show");
-}
+    img.addEventListener("click", () => {
+        descriptions[i].classList.toggle("show");
+    });
+});
