@@ -21,7 +21,7 @@ const jobs = [
             - Automate workflows with Power Automate and integrate systems, creating Power BI dashboards for data-driven decisions.
         `,
         duration: "january 2024 - Current",
-        tools: ["Power Apps", "Power Automate", "Power BI", "Python", "SQL", "HTML", "CSS", "JavaScript"]
+        tools: ["Power Apps", "Power Automate", "Power BI", "Python", "HTML", "CSS", "JavaScript"]
     },
     j3 = {
         image: "j3.png",

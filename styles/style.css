@@ -428,9 +428,11 @@ body::-webkit-scrollbar-thumb {
                         & li {
                             list-style: none;
                             margin: 4px 8px;
-                            padding: 4px 12px;
+                            padding: 4px 8px;
                             border: 1px solid #fff;
                             border-radius: 16px;
+                            font-size: 11px;
+                            font-weight: 600;
                         }
                     }
     
@@ -642,6 +644,9 @@ body::-webkit-scrollbar-thumb {
 
 /* Small devices (phones, 480px and down) */
 @media screen and (max-width:480px){
+    .experience {
+        display: none;
+    }
     .portfolio .portfolio-container .gallery .project{
         max-width: 100%;
     }
