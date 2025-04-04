@@ -15,7 +15,10 @@ const jobs = [
         jobTitle: "Software Engineer | Training",
         department: "Operations and Supply Chain Management",
         description: `
-            - Coordination of requirements with all departments of the business.
+            - Collaborate with stakeholders to define and develop effective Power Platform solutions aligned with objectives.<br>
+            - Analyze complex issues, identify automation opportunities, and propose creative solutions.<br>
+            - Design, develop, and deploy custom applications using Power Apps to enhance efficiency.<br>
+            - Automate workflows with Power Automate and integrate systems, creating Power BI dashboards for data-driven decisions.
         `,
         duration: "january 2024 - Current",
         tools: ["Power Apps", "Power Automate", "Power BI"]
