@@ -388,7 +388,7 @@ body::-webkit-scrollbar-thumb {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 32px;
-                width: 768px;
+                width: 900px;
             }
                 .job-image-container {
                     width: 200px;
@@ -404,7 +404,7 @@ body::-webkit-scrollbar-thumb {
                         aspect-ratio: 1/1;
                     }
                 .job-content {
-                    width: 568px;
+                    width: 700px;
                     padding: 12px 16px;
                     border: 1px solid #3f3f3f;
                     border-radius: 24px;
