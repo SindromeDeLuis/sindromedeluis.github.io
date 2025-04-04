@@ -12,7 +12,7 @@ const jobs = [
     j2 = {
         image: "j2.png",
         company: "Cargill de Venezuela, S.R.L.",
-        jobTitle: "Software Engineer | Training",
+        jobTitle: "Software Engineer",
         department: "Operations and Supply Chain Management",
         description: `
             - Collaborate with stakeholders to define and develop effective Power Platform solutions aligned with objectives.<br>
@@ -21,7 +21,7 @@ const jobs = [
             - Automate workflows with Power Automate and integrate systems, creating Power BI dashboards for data-driven decisions.
         `,
         duration: "january 2024 - Current",
-        tools: ["Power Apps", "Power Automate", "Power BI"]
+        tools: ["Power Apps", "Power Automate", "Power BI", "Python", "SQL", "HTML", "CSS", "JavaScript"]
     },
     j3 = {
         image: "j3.png",
